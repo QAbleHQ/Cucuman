@@ -1,0 +1,114 @@
+{
+  "Admin_tab": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "link",
+    "platform": "web",
+    "web_locator": "//a[@href='/admin']"
+  },
+  "client_management_title": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "text",
+    "platform": "web",
+    "web_locator": "//div[text()='Client Management']"
+  },
+  "create_new_client_button": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "button",
+    "platform": "web",
+    "web_locator": "//button[normalize-space()='Create A New Client']"
+  },
+  "client_name": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "text_box",
+    "platform": "web",
+    "web_locator": "//input[@name='name']"
+  },
+  "line_business_dropdown": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "button",
+    "platform": "web",
+    "web_locator": "//div[@id='lob']"
+  },
+  "fleet_option": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "button",
+    "platform": "web",
+    "web_locator": "//li[normalize-space()='Fleet']"
+  },
+  "client_email": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "text_box",
+    "platform": "web",
+    "web_locator": "//input[@name='email']"
+  },
+  "client_phone": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "text_box",
+    "platform": "web",
+    "web_locator": "//input[@name='phone']"
+  },
+  "client_address": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "text_box",
+    "platform": "web",
+    "web_locator": "//input[@name='address']"
+  },
+  "client_city": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "text_box",
+    "platform": "web",
+    "web_locator": "//input[@name='city']"
+  },
+  "client_state": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "text_box",
+    "platform": "web",
+    "web_locator": "//input[@name='state']"
+  },
+  "country_dropdown": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "button",
+    "platform": "web",
+    "web_locator": "//div[@id='country']"
+  },
+  "india_option": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "button",
+    "platform": "web",
+    "web_locator": "//li[normalize-space()='India']"
+  },
+  "create_button": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "button",
+    "platform": "web",
+    "web_locator": "//button[normalize-space()='Create']"
+  },
+  "client_added_message": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "text",
+    "platform": "web",
+    "web_locator": "//div[@role=\"alert\"]//div[contains(text(),'Client Added Successfully.')]"
+  },
+  "client_name_list": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "text",
+    "platform": "web",
+    "web_locator": "//div[@id=\"clients-infinte-list\"]//div[@class=\"client-card_client-name\"]"
+  }
+}

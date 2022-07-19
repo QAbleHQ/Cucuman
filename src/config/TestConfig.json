@@ -1,0 +1,22 @@
+{
+  "run": "drivebuddy_prod",
+  "config": {
+    "drivebuddy_prod": {
+      "platform": "web",
+      "browser": "chrome",
+      "capabilities": {},
+      "env": "https://dopedev.drivebuddyai.xyz/",
+      "isGrid": false,
+      "gridURL": "",
+      "viewPort": "",
+      "apiTestConfig" :{
+        "enable" : true,
+        "env" : ""
+      },
+      "tags": [
+        "nevvon_regression.xml"
+      ]
+
+    }
+    }
+}

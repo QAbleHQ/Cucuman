@@ -1,0 +1,41 @@
+{
+  "Email_textbox": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "text_box",
+    "platform": "web",
+    "web_locator": "//input[@name='email']"
+  },
+  "Password_textbox": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "text_box",
+    "platform": "web",
+    "web_locator": "//input[@name='password']"
+  },
+
+  "Sign_in_button": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "button",
+    "platform": "web",
+    "web_locator": "//button[@type='submit']"
+  },
+
+  "User_name": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "text",
+    "platform": "web",
+    "web_locator": "//span[text()='AP']"
+  },
+
+  "Tracking_page": {
+    "objectGenerate": "generate",
+    "locator_type": "xpath",
+    "element_type": "link",
+    "platform": "web",
+    "web_locator": "//div[contains(.,'Tracking')][@class=\"side-navbar_item_title\"]"
+  }
+
+}
