@@ -1,4 +1,4 @@
-Feature: Add New User
+Feature: Add New User with client role
 
  Background: Admin is logged In
   When I submit username and password
