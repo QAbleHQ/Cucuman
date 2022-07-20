@@ -7,7 +7,7 @@ import io.unity.performaction.autoweb.Element;
 import io.unity.performaction.autoweb.Verify;
 import io.unity.performaction.autoweb.Wait;
 
-public class ClientManagement {
+public class ClientManagement  {
     Element element = null;
     Verify verify = null;
     Wait wait = null;
