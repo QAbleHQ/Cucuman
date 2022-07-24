@@ -6,7 +6,7 @@ import io.unity.performaction.autoweb.Element;
 import io.unity.performaction.autoweb.Verify;
 import io.unity.performaction.autoweb.Wait;
 
-public class LoginPage extends base {
+public class LoginPage  {
 
     Element element = null;
     Verify verify = null;
@@ -44,19 +44,19 @@ public class LoginPage extends base {
 
     @MethodsData(method_id = "text_1")
     public void verify_User_name_text_is_equal_to(String button_text) {
-        verify = new Verify(driver);
+
         verify.element_text_is_equal_to("User_name", button_text);
     }
 
     @MethodsData(method_id = "text_box_2")
     public void clear_text_from_Password_textbox() {
-        element = new Element(driver);
+
         element.clear_text_field("Password_textbox");
     }
 
     @MethodsData(method_id = "text_box_3")
     public void clear_text_and_enter_text_in_Password_textbox(String text_to_enter) {
-        element = new Element(driver);
+
         element.clear_and_enter_in_text_field("Password_textbox", text_to_enter);
     }
 
@@ -67,7 +67,7 @@ public class LoginPage extends base {
 
     @MethodsData(method_id = "text_box_1")
     public void enter_text_at_Password_textbox(String text_to_enter) {
-        element = new Element(driver);
+
         element.enter_text("Password_textbox", text_to_enter);
     }
 
