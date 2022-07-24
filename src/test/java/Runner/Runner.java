@@ -6,16 +6,13 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "Features/SuperAdmin/AddNewClient.feature",
-        glue = "object_repository",
+        features = "src/test/java/web/Features/SuperAdmin/AddNewClient.feature",
+        glue = {"io.unity.framework.init","web.Steps"},
         publish = true
 )
 
 public class Runner {
 
 
-    public static void main(String[] args) {
-
-    }
 
 }

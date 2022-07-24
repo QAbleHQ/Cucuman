@@ -7,17 +7,17 @@ import io.unity.performaction.autoweb.Element;
 import io.unity.performaction.autoweb.Verify;
 import io.unity.performaction.autoweb.Wait;
 
-public class ClientManagement {
+public class ClientManagement extends base {
     Element element = null;
     Verify verify = null;
     Wait wait = null;
     Browser browser = null;
 
     public ClientManagement() {
-        element = new Element(base.driver);
-        verify = new Verify(base.driver);
-        wait = new Wait(base.driver);
-        browser = new Browser(base.driver);
+        element = new Element(driver);
+        verify = new Verify(driver);
+        wait = new Wait(driver);
+        browser = new Browser(driver);
     }
 
     @MethodsData(method_id = "link_1")

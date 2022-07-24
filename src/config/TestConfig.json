@@ -3,7 +3,7 @@
   "config": {
     "drivebuddy_prod": {
       "platform": "web",
-      "browser": "chrome",
+      "browser": "chrome-headless",
       "capabilities": {},
       "env": "https://dopedev.drivebuddyai.xyz/",
       "isGrid": false,

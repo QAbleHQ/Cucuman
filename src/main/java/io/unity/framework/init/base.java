@@ -4,12 +4,13 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import io.cucumber.java.BeforeAll;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.unity.performaction.autoweb.Browser;
 import kong.unirest.Unirest;
 import org.json.JSONObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
@@ -17,7 +18,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import io.unity.framework.readers.json_file_reader;
 import io.unity.framework.runner.TestRunner;
-import io.unity.performaction.autoweb.Browser;
 
 
 import java.io.File;
@@ -148,7 +148,12 @@ public class base {
             driver = new OperaDriver();
             System.out.println("Inside opera");
         }
-
+        else if (browserName.equalsIgnoreCase("chrome-headless")) {
+            WebDriverManager.chromedriver().setup();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless");
+            driver = new ChromeDriver(options);
+        }
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
         driver.manage().window().fullscreen();
         return driver;
