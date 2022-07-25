@@ -206,7 +206,7 @@ public class UserManagement  {
 
 	@MethodsData(method_id = "text_1")
 	public void verify_new_user_title_text_is_equal_to(String button_text) throws InterruptedException {
-		driver.wait(6000);
+base.		driver.wait(6000);
 		verify.element_text_is_equal_to("new_user_title", button_text);
 	}
 
