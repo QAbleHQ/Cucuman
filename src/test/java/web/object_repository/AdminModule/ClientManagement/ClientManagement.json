@@ -110,5 +110,12 @@
     "element_type": "text",
     "platform": "web",
     "web_locator": "//div[@id=\"clients-infinte-list\"]//div[@class=\"client-card_client-name\"]"
-  }
+  },
+    "new_element": {
+      "objectGenerate": "generate",
+      "locator_type": "xpath",
+      "element_type": "button",
+      "platform": "web",
+      "web_locator": "//div[@id=\"clients-infinte-list\"]//div[@class=\"client-card_client-name\"]"
+    }
 }

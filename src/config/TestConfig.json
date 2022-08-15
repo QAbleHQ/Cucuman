@@ -4,8 +4,23 @@
     "drivebuddy_prod": {
       "platform": "web",
       "browser": "chrome",
-      "capabilities": {},
+      "capabilities": {
+        "headless" : true
+      },
       "env": "https://dopedev.drivebuddyai.xyz/",
+      "isGrid": false,
+      "gridURL": "",
+      "viewPort": "",
+      "tags": [
+        "nevvon_regression.xml"
+      ]
+
+    },
+    "drivebuddy_stage": {
+      "platform": "web",
+      "browser": "firefox",
+      "capabilities": {},
+      "env": "https://dopestage.drivebuddyai.xyz/",
       "isGrid": false,
       "gridURL": "",
       "viewPort": "",
@@ -18,5 +33,8 @@
       ]
 
     }
+
+
+
     }
 }

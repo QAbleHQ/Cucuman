@@ -5,6 +5,7 @@ Background: Admin is logged In
   When I submit username and password
   Then I should be logged in
 
+@Regression @NewFeature @DD-101
 Scenario: To verify that Super admin is able to Add new client
 
 Given Admin is on tracking page
