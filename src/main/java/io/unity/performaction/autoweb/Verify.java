@@ -41,6 +41,21 @@ public class Verify {
 
     }
 
+    public void element_is_not_present(String element_name) {
+        boolean bool = false;
+        logs.test_step("verify " + element_name + " is displayed");
+        try {
+            if (element.find_multiple_elements(element_name).size()==0) {
+                bool = true;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        assertThat(bool).isTrue();
+        logs.test_result(bool);
+    }
+
     public boolean check_element_is_present(String element_name) {
         boolean bool = false;
 
