@@ -17,6 +17,13 @@ public class GetApiConfig {
     }
 
 
+
+
+    public JSONObject getSchema() {
+        JSONObject object = getApiConfig();
+        return (JSONObject) object.get("schema");
+    }
+
     public JSONObject getApiConfig() {
 
 

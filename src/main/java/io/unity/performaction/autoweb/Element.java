@@ -92,7 +92,7 @@ public class Element {
         return element;
     }
 
-    public WebElement find_element_using_dynamic_xpath(String locator_value, Map<String, String> dynamic_value) throws locator_validation_exception {
+    public WebElement find_element_using_dynamic_xpath(String locator_value, Map<String, String> dynamic_value)  {
         WebElement element = null;
         locator_reader reader = new locator_reader();
         String[] locator_to_find = reader.get_locator_value(locator_value).split(":");
@@ -112,12 +112,12 @@ public class Element {
                 }
 
             } else {
-                throw new locator_validation_exception("No Dynamic Value Found in locator");
+             //   throw new locator_validation_exception("No Dynamic Value Found in locator");
             }
 
 
         } else {
-            throw new locator_validation_exception("locator type is not a dyn-xpath, This method only use for the Dynamic Xpath ");
+ //           throw new locator_validation_exception("locator type is not a dyn-xpath, This method only use for the Dynamic Xpath ");
         }
 
         return driver.findElement(By.xpath(final_xpath));

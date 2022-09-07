@@ -1,8 +1,8 @@
 package io.unity.framework.readers;
 
+import io.unity.framework.runner.TestRunner;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import io.unity.framework.runner.TestRunner;
 
 import java.io.File;
 import java.nio.file.Files;
@@ -25,6 +25,19 @@ public class json_file_reader {
         return testConfig;
     }
 
+
+    public JSONObject getTimeAssertion(String configName) {
+        return (JSONObject) getConfigObject(configName).get("timeAssertion");
+    }
+
+
+    public Boolean isTimeAssertionEnable(String configName) {
+        return (Boolean) getTimeAssertion(configName).get("enable");
+    }
+
+    public int getTimeToCompare(String configName) {
+        return (int) getTimeAssertion(configName).get("timeToCompareInMs");
+    }
 
     public String getRunConfig() {
         JSONObject object = getTestConfig();
@@ -112,14 +125,13 @@ public class json_file_reader {
     }
 
 
-    public String getEnvFromCurrentConfig()
-    {
+    public String getEnvFromCurrentConfig() {
         JSONObject object = getTestConfig();
         json_file_reader config = new json_file_reader();
         if (TestRunner.currentConfig.equals("")) {
             TestRunner.currentConfig = config.getRunConfig();
         }
-       return   getConfigObject(TestRunner.currentConfig).getString("env") ;
+        return getConfigObject(TestRunner.currentConfig).getString("env");
     }
 
 
