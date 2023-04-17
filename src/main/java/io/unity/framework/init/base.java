@@ -155,7 +155,7 @@ public class base {
         else if (browserName.equalsIgnoreCase("chrome-headless")) {
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
-            options.addArguments("--headless");
+            options.addArguments("--headless", "--remote-allow-origins=*");
             driver = new ChromeDriver(options);
         }
         else if (browserName.equalsIgnoreCase("firefox-headless")) {
